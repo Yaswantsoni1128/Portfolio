@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { easeInOut, easeOut, motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram, MessageCircle } from 'lucide-react'
@@ -77,7 +77,7 @@ export function Contact() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: easeInOut },
     },
   }
 

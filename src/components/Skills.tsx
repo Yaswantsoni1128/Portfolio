@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { easeInOut, easeOut, motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import React, { useRef, useState } from 'react'
 import { Code, Database, Smartphone, Settings, ChevronRight, Languages } from 'lucide-react'
@@ -41,7 +41,7 @@ export function Skills() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: easeInOut },
     },
   }
 
@@ -50,7 +50,7 @@ export function Skills() {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: easeOut },
     },
   }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { easeInOut, easeOut, motion } from 'framer-motion'
 import { ChevronDown, ArrowRight, Download, Sparkles } from 'lucide-react'
 import { developerInfo } from '@/lib/data'
 import Image from 'next/image'
@@ -31,7 +31,7 @@ export function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: easeOut },
     },
   }
 
@@ -42,7 +42,7 @@ export function Hero() {
       transition: {
         duration: 6,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: easeInOut,
       },
     },
   }
@@ -55,7 +55,7 @@ export function Hero() {
       transition: {
         duration: 3,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: easeInOut,
       },
     },
   }
@@ -223,7 +223,7 @@ export function Hero() {
                   transition={{
                     duration: 4,
                     repeat: Infinity,
-                    ease: 'easeInOut',
+                    ease: easeInOut,
                   }}
                 />
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-accent/30 shadow-2xl">

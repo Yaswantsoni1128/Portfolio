@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
+import { useInView , easeInOut } from 'framer-motion'
 import { useRef } from 'react'
 import { MapPin, GraduationCap, Award, Calendar } from 'lucide-react'
 import { developerInfo, education, achievements } from '@/lib/data'
@@ -27,7 +27,7 @@ export function About() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: easeInOut  },
     },
   }
 

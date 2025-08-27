@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { ExternalLink, Github, Eye, Star, GitBranch } from 'lucide-react'
@@ -31,7 +31,7 @@ export function Projects() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: easeInOut },
     },
   }
 
