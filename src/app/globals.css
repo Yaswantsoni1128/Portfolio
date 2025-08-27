@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/* Ensure Tailwind utilities are available */
+@layer base {
+  .bg-muted {
+    background-color: hsl(var(--muted));
+  }
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+  .bg-card {
+    background-color: hsl(var(--card));
+  }
+  .text-card-foreground {
+    color: hsl(var(--card-foreground));
+  }
+  .bg-accent {
+    background-color: hsl(var(--accent));
+  }
+  .text-accent-foreground {
+    color: hsl(var(--accent-foreground));
+  }
+  .border-border {
+    border-color: hsl(var(--border));
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark theme colors */
+  --background: 222 47% 11%; /* Dark slate blue */
+  --background-secondary: 215 28% 17%; /* Darker slate */
+  --foreground: 213 31% 91%; /* Light gray */
+  --foreground-secondary: 215 20% 65%; /* Muted gray */
+  
+  --primary: 263 70% 50%; /* Purple */
+  --primary-foreground: 210 40% 98%; /* Almost white */
+  
+  --secondary: 215 27% 32%; /* Dark gray */
+  --secondary-foreground: 215 20% 65%; /* Light gray */
+  
+  --accent: 262 83% 58%; /* Bright purple */
+  --accent-secondary: 217 91% 60%; /* Blue accent */
+  --accent-foreground: 210 40% 98%; /* White */
+  
+  --border: 215 27% 32%; /* Dark border */
+  --card: 222 47% 11%; /* Card background */
+  --card-foreground: 213 31% 91%; /* Card text */
+  
+  --muted: 215 27% 17%; /* Muted background */
+  --muted-foreground: 215 20% 65%; /* Muted text */
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-secondary));
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-secondary)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glowing border effect */
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-secondary)));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+}
+
+/* Animated background */
+.animated-bg {
+  background: linear-gradient(-45deg, hsl(var(--background)), hsl(var(--background-secondary)), hsl(var(--background)), hsl(var(--muted)));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Code block styling */
+.code-block {
+  background: hsl(var(--muted));
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse rounded;
+  background-color: hsl(var(--muted));
+}
+
+/* Custom focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  --tw-ring-color: hsl(262 83% 58%);
+  --tw-ring-offset-color: hsl(222 47% 11%);
+}
