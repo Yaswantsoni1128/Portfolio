@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: 'Full-stack developer and BTech 3rd year student at IIITUNA with internship experience and multiple projects.',
   keywords: ['Full Stack Developer', 'BTech', 'IIITUNA', 'React', 'Next.js', 'TypeScript', 'Portfolio'],
   authors: [{ name: 'Yaswant' }],
+  icons: {
+    icon: '/Yash_icon.jpg',
+  },
   openGraph: {
     title: 'Yaswant Portfolio',
     description: 'Full-stack developer and BTech 3rd year student at IIITUNA with internship experience and multiple projects.',

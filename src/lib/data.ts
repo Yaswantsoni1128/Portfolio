@@ -44,7 +44,7 @@ export const developerInfo = {
   email: "yaswantsoni2005@gmail.com",
   phone: "+918003999085",
   location: "IIIT Una(Himachal Pradesh)",
-  profileImage: "/YASWANT_IMG.jpg",
+  profileImage: "/Yash.jpg",
   resumeUrl: "/Yaswant_resume_clg.pdf",
   github: "https://github.com/Yaswantsoni1128",
   linkedin: "https://www.linkedin.com/in/yaswant-soni-8b6412282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -132,7 +132,17 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Abhinav3291/Frontend-KG",
     liveUrl: "https://kgtrainingandplacements.in",
     featured: false
-  }
+  },
+  {
+    id: "5",
+    title: "Fix My Locality",
+    description: "Fix My Locality is a smart platform that helps citizens report local issues like garbage, potholes, and streetlight faults through a mobile or web app. Using AI for issue classification and prioritization, it enables faster complaint handling, real-time tracking, and transparent resolution to improve public services and accountability.",
+    image: "/fix-my-locality.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB","twilio","Gemini AI", "Google Maps API"],
+    githubUrl: "https://github.com/Yaswantsoni1128/CivicEye",
+    liveUrl: "https://fix-my-locality.vercel.app",
+    featured: true
+  },
 ]
 
 export const skills: Skill[] = [

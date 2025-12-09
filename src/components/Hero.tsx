@@ -206,7 +206,7 @@ export function Hero() {
           {/* Profile Image */}
           <motion.div
             variants={itemVariants}
-            className="relative mx-auto lg:mx-0"
+            className="relative mx-auto hidden lg:block lg:mx-0"
           >
             <motion.div
               variants={floatVariants}
@@ -231,7 +231,7 @@ export function Hero() {
                     src={developerInfo.profileImage}
                     alt={`${developerInfo.name} - Profile Picture`}
                     fill
-                    className="object-cover"
+                    className="object-cover "
                     priority
                   />
                 </div>
@@ -240,7 +240,7 @@ export function Hero() {
                 {[...Array(6)].map((_, i) => (
                   <motion.div
                     key={i}
-                    className="absolute w-4 h-4"
+                    className="absolute w-4 h-4 "
                     style={{
                       left: `${15 + (i * 15)}%`,
                       top: `${15 + (i * 12)}%`,
@@ -259,7 +259,7 @@ export function Hero() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 sm:hidden"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.8 }}
