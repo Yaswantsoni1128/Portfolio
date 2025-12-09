@@ -57,7 +57,7 @@ export const education: Education[] = [
     institution: "Indian Institute of Information Technology, Una",
     degree: "BTech - Electronics and Communication Engineering",
     duration: "2023 - 2027",
-    gpa: "7.48/10",
+    gpa: "7.70/10",
     location: "Himachal Pradesh, India"
   }
 ]
