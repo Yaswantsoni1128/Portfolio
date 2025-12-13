@@ -116,11 +116,12 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "BloodBridge",
-    description: "A blood donation platform designed for hospitals that seamlessly connects donors with recipients, enables real-time tracking of blood units, and integrates robust verification features to ensure safety, trust, and reliability in critical medical situations.",
-    image: "/bloodbridge.png",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB","twilio"],
-    githubUrl: "https://github.com/Yaswantsoni1128/BloodBridge",
+    title: "Fix My Locality",
+    description: "Fix My Locality is a smart platform that helps citizens report local issues like garbage, potholes, and streetlight faults through a mobile or web app. Using AI for issue classification and prioritization, it enables faster complaint handling, real-time tracking, and transparent resolution to improve public services and accountability.",
+    image: "/fix-my-locality.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB","twilio","Gemini AI", "Google Maps API"],
+    githubUrl: "https://github.com/Yaswantsoni1128/CivicEye",
+    liveUrl: "https://fix-my-locality.vercel.app",
     featured: true
   },
   {
@@ -135,12 +136,11 @@ export const projects: Project[] = [
   },
   {
     id: "5",
-    title: "Fix My Locality",
-    description: "Fix My Locality is a smart platform that helps citizens report local issues like garbage, potholes, and streetlight faults through a mobile or web app. Using AI for issue classification and prioritization, it enables faster complaint handling, real-time tracking, and transparent resolution to improve public services and accountability.",
-    image: "/fix-my-locality.png",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB","twilio","Gemini AI", "Google Maps API"],
-    githubUrl: "https://github.com/Yaswantsoni1128/CivicEye",
-    liveUrl: "https://fix-my-locality.vercel.app",
+    title: "BloodBridge",
+    description: "A blood donation platform designed for hospitals that seamlessly connects donors with recipients, enables real-time tracking of blood units, and integrates robust verification features to ensure safety, trust, and reliability in critical medical situations.",
+    image: "/bloodbridge.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB","twilio"],
+    githubUrl: "https://github.com/Yaswantsoni1128/BloodBridge",
     featured: true
   },
 ]

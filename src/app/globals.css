@@ -24,8 +24,8 @@
     border-color: hsl(var(--border));
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 :root {
   /* Dark theme colors */
@@ -151,4 +151,29 @@ body {
   @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
   --tw-ring-color: hsl(262 83% 58%);
   --tw-ring-offset-color: hsl(222 47% 11%);
+}
+
+/* Blob animation for skills section */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
