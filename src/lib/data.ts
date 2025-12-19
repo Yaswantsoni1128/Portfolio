@@ -69,10 +69,9 @@ export const experiences: Experience[] = [
     position: "Web Developer Intern",
     duration: "May 2025 - May 2025",
     description: [
-      "Developed responsive web applications using React.js and Node.js, serving 1000+ active users",
+      "Developed responsive web applications using React.js and Node.js, serving 500+ active users",
       "Implemented RESTful APIs with Express.js and MongoDB, improving data retrieval speed by 40%",
-      "Collaborated with cross-functional teams in Agile environment using Git version control",
-      "Built automated testing suites using Jest, achieving 90% code coverage"
+      "Collaborated with cross-functional teams using Git version control",
     ],
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "Git","Firebase"],
     type: "internship"
@@ -81,12 +80,11 @@ export const experiences: Experience[] = [
     id: "2",
     company: "Quickintell",
     position: "Full Stack Developer Intern",
-    duration: "June 2025 - Present",
+    duration: "June 2025 - October 2025",
     description: [
       "Created modern user interfaces using React.js and Tailwind CSS for 5+ client projects",
       "Optimized application performance resulting in 30% faster load times",
-      "Integrated third-party APIs and payment gateways for e-commerce platforms",
-      "Mentored 2 junior developers and conducted code reviews"
+      "Integrated third-party APIs and payment gateways for e-commerce platforms"
     ],
     technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "React-Native"],
     type: "internship"
@@ -136,6 +134,16 @@ export const projects: Project[] = [
   },
   {
     id: "5",
+    title: "Nature Lover",
+    description: "Nature Lover is designed for people who love greenery and want easy access to professional gardening services and quality plants. Users can book garden care, maintenance, and landscaping support, while also shopping for healthy plants online. It offers a simple, trusted, and eco-friendly way to grow beautiful spaces.",
+    image: "/nature-lover.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB","Nodemailer"],
+    githubUrl: "https://github.com/Yaswantsoni1128/nature-lover",
+    liveUrl: "https://nature-lover-dusky.vercel.app/",
+    featured: false
+  },
+  {
+    id: "6",
     title: "BloodBridge",
     description: "A blood donation platform designed for hospitals that seamlessly connects donors with recipients, enables real-time tracking of blood units, and integrates robust verification features to ensure safety, trust, and reliability in critical medical situations.",
     image: "/bloodbridge.png",
@@ -320,6 +328,6 @@ export const skills: Skill[] = [
 
 export const achievements = [
   "🏆 Winner - 3rd in InterCollege Hackathon 2025 (Team Lead)",
-  "🚀 1 Successful Internship completed",
+  "🚀 2 Successful Internship completed",
   "📈 Built applications serving 500+ users"
 ]
